@@ -1,0 +1,418 @@
+/**
+file: style1.css
+**/
+
+
+body {
+    margin: 0;
+    background: rgb(255, 255, 255);
+    overflow-x: hidden;
+    /* Hide horizontal scrollbar */
+
+}
+
+/*trying to do something with the   */
+.header {
+    padding: 30px 16px;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(54, 66, 94, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    color: #f1f1f1;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-right * {
+    margin-left: 20px;
+}
+
+a.account {
+    font-family: "report", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: .2rem;
+    font-size: 250%;
+
+    background-color: #EC6069;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 50px 50px;
+    margin-right: 40px;
+}
+
+.account:hover {
+    background-color: rgb(203, 116, 116);
+    color: rgb(255, 255, 255);
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+.sticky+.content {
+    padding-top: 102px;
+}
+
+
+
+/*styling the text*/
+h1 {
+    font-family: "rockwell-nova", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 350%;
+}
+
+p {
+    font-family: "report", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+h3 {
+    font-family: "report", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: .2rem;
+    font-size: 250%;
+}
+
+/*styling the first group of content - container*/
+.container {
+    background-image: url(images/bph.jpg);
+    background-color: aquamarine;
+    background-size: 100% 100%;
+    color: rgb(255, 255, 255);
+
+    min-width: 100%;
+    height: 1100px;
+}
+
+.container div {
+    padding-top: 300px;
+    height: 65%;
+    margin-left: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container div h1 {
+    margin-top: 50%;
+    font-size: 100px;
+    margin: 0px;
+}
+
+.container div p {
+    margin: 0px;
+    font-size: 50px;
+}
+
+.container div h3 {
+    margin: 0px;
+    margin-top: auto;
+}
+
+
+/*styling the second group of content - container1*/
+.container1 {
+    background-image: url(images/peach\ background.svg);
+    background-color: aquamarine;
+    background-size: cover;
+
+    color: rgb(255, 255, 255);
+    /* 
+    padding-bottom: 150px;
+    padding-top: 150px; */
+}
+
+/*styling the third group of content - myIdea*/
+.blueBack {
+    background-image: url(images/bluegrey\ gradient.svg);
+    background-color: aquamarine;
+    background-size: cover;
+
+    color: rgb(255, 255, 255);
+
+    padding-bottom: 30px;
+    padding-top: 150px;
+
+    min-height: 4500px;
+}
+
+
+
+/*Are you ready to find your next exciting stop?*/
+.centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*styling the middle line of the text in the peach block*/
+.middleLine {
+    font-family: "report", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 220%;
+}
+
+
+.blueBack .suggestions {
+    margin: 0px;
+    margin-left: 20%;
+}
+
+.wrapper {
+    background-image: url(images/white\ stuff\ in\ the\ back.png);
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 26cm 26cm;
+    gap: 0.2rem;
+}
+
+
+
+.first {
+    justify-self: center
+}
+
+
+.third {
+    justify-self: end;
+}
+
+.fourth {
+    margin-top: 20px;
+}
+
+
+.sixth {
+    justify-self: center;
+    margin-right: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a.loadMore {
+    font-family: "report", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: .2rem;
+    font-size: 250%;
+
+    background-color: #EC6069;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    /* display: inline-block; */
+    border-radius: 50px 50px;
+    /* margin-right: 40px; */
+    width: 65%;
+    margin-right: 12%;
+}
+
+.loadMore:hover {
+    background-color: rgb(203, 116, 116);
+    color: rgb(255, 255, 255);
+}
+
+/*thats for title Frequently asked questions*/
+h2 {
+    font-family: "report", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: .2rem;
+    font-size: 400%;
+    text-align: center;
+}
+
+
+.thisisFAQ {
+    margin: 120px;
+}
+
+
+.collapsible {
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    padding: 30px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 300%;
+}
+
+.active,
+.collapsible:hover {
+    background-color: transparent;
+}
+
+.TheFrequentlyAskedQuestions {
+    margin: 100px;
+    align-content: center;
+    width: 90%;
+}
+
+.TheFrequentlyAskedQuestions button {
+    /* text-align: center; */
+    border-bottom: 3px solid rgb(255, 255, 255);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.TheFrequentlyAskedQuestions button p {
+    margin: 0px;
+}
+
+
+.content {
+    padding: 50px;
+    display: none;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.answerFAQ {
+    font-family: "report", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 200%;
+}
+
+.collapsible {
+    font-family: "report", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+.askQ {
+    font-family: "report", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: .2rem;
+    font-size: 250%;
+
+    background-color: #EC6069;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 50px 50px;
+    margin-bottom: 3cm;
+
+}
+
+.askQ:hover {
+    background-color: rgb(203, 116, 116);
+    color: rgb(255, 255, 255);
+}
+
+/*thefooteeeer*/
+.footer {
+    margin-top: 150px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 2px solid #FFFF;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rightSideF {
+    display: flex;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+}
+
+.settings {
+    display: flex;
+    flex-direction: column;
+}
+
+.help {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.rightSideF div h4 {
+    margin-top: 0px;
+    font-family: "report", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 35px;
+    margin-bottom: 20px;
+    letter-spacing: 4px;
+}
+
+.rightSideF div:not(:last-child) {
+    margin-right: 80px;
+}
+
+.rightSideF {
+    font-family: "report", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/*to get rid of the decorations*/
+.rightSideF div a {
+    color: #f2f2f2;
+    text-decoration: none;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+.rightSideF div a:hover {
+    color: #EC6069;
+}
+
+
+.logo {
+    width: 350px;
+}
+
+.socials img {
+    margin-right: 30px;
+}
+
+.socials {
+    margin-top: 20px;
+}
+
+
+.copyright {
+    margin-top: 70px;
+    text-align: center;
+
+    font-family: "report", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+}
