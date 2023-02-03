@@ -1,6 +1,6 @@
 /**
 file: style1.css
-for Index1.html
+for index1.html - this is front page for signed in
 **/
 
 
@@ -134,9 +134,7 @@ h3 {
     background-size: cover;
 
     color: rgb(255, 255, 255);
-    /* 
-    padding-bottom: 150px;
-    padding-top: 150px; */
+
 }
 
 /*styling the third group of content - myIdea*/
@@ -185,7 +183,6 @@ h3 {
 }
 
 
-
 .first {
     justify-self: center
 }
@@ -207,6 +204,7 @@ h3 {
     flex-direction: column;
     align-items: center;
 }
+
 
 a.loadMore {
     font-family: "report", sans-serif;
@@ -231,6 +229,8 @@ a.loadMore {
     background-color: rgb(203, 116, 116);
     color: rgb(255, 255, 255);
 }
+
+
 
 /*thats for title Frequently asked questions*/
 h2 {
@@ -329,7 +329,9 @@ h2 {
     color: rgb(255, 255, 255);
 }
 
-/*thefooteeeer*/
+
+
+/*styling the footeeeer*/
 .footer {
     margin-top: 150px;
     width: 80%;
@@ -416,4 +418,137 @@ h2 {
     font-weight: 400;
     font-style: normal;
     font-size: 25px;
+}
+
+
+
+
+@media (max-width:393px) {
+
+    /*struggling with the header*/
+
+    .header img {
+        width: 120px;
+        height: auto;
+    }
+
+    .header-right{
+        width: 120px;
+        height: auto;
+    }
+
+    /*that is for the first group of content*/
+    .container {
+        background-image: url(images/bph\ phone.jpg);
+    }
+
+    .container div {
+        padding-top: 200px;
+        height: auto;
+        margin-left: 5%;
+    }
+
+    .container div h1 {
+        font-size: 50px;
+    }
+
+    .container div p {
+        font-size: 30px;
+    }
+
+
+    /*the peach block of text*/
+
+    .container1 {
+        text-align: center;
+        font-size: 70%;
+    }
+
+
+    /*styling my ideaaa*/
+    .blueBack img{
+        width: 400px;
+        height: auto;
+        min-height: 105px;
+    }
+
+    .blueBack .suggestions{
+        font-size: 20px;
+    }
+
+   
+    .first{
+        
+        max-width: 100px;
+        max-height: 100px;
+    }
+
+    .second{
+        max-width: 100px;
+        max-height: 100px;
+        margin-left: -800px;
+    }
+
+    .third {
+        max-width: 100px;
+        max-height: 100px;
+        justify-self: left;
+    }
+    
+    .fourth {
+        max-width: 100px;
+        max-height: 100px;
+        justify-self: left;
+        margin-left: -820px;
+    }
+    
+    .fifth{
+        max-width: 90px;
+    }
+
+    .sixth {
+        max-height: 100px;
+        max-width: 100px;
+        justify-self: left;
+        display: none;
+    }
+
+    
+
+
+
+    /*that is frequently asked questions fix*/
+    h2 {
+
+        font-size: 300%;
+    }
+
+    .TheFrequentlyAskedQuestions button {
+        font-size: 130%;
+        border-bottom: 1px solid rgb(255, 255, 255);
+    }
+
+    .askQ {
+        font-size: 110%;
+    }
+
+
+    /*trying to fix the footer here*/
+    .footer {
+        width: fit-content;
+
+    }
+
+    .logo {
+        width: 50%;
+    }
+
+    .socials {
+        display: flex;
+
+    }
+
+    .copyright {
+        font-size: 80%;
+    }
 }
